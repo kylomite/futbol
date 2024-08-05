@@ -1,5 +1,13 @@
 # Futbol
 
+## About
+
+* The StatTracker application provides detailed statistical analysis for a sports league, covering game, league, and season metrics. It includes methods to determine the highest and lowest game scores, percentages of home and visitor wins, average goals per game, and games by season. League statistics cover team performance, identifying the best and worst offenses, and the highest and lowest-scoring teams at home and away. Season-specific methods analyze coach performance, team accuracy, and tackle counts. StatTracker is a comprehensive for analyzing league performance and trends.
+
+## Built With
+
+* Ruby 3.2.2 & RSpec 3.13
+
 ## Deliverables
 
 **Outline of Check-ins**
@@ -19,13 +27,26 @@
 * We all agreed Github Project is most likely the industry standard and it would behoove us to familiarize ourselves with the application.
 
 **Code Design**
-* Expand upon this.
+* After assessing the project requirements, we decided to structure our code design around four primary classes:
+
+    * `StatTracker`: This class will encapsulate the core logic and functionality, managing most of the codebase.
+
+    * `Game`, `Team`, and `Season`: These classes will act as auxiliary components and data storage.
+
+Additionally, we created three simplified dummy CSV files with minimal data. This approach ensures our tests execute efficiently by avoiding the overhead of processing large datasets.
+
+To streamline our development process and prevent issues with method assignment, we established a clear code architecture from the outset. 
+    
+Given our asynchronous workflow and the fact that different team members were working on various methods concurrently, we anticipated potential misalignment between our to-do list and the evolving code structure. To mitigate this risk, we preemptively defined method names in both the library (lib) and specification (spec) files, adhering to the assignment order.
+
 * We have implemented a style guide to adhere to for consistency.
     * [Link to Style Guide](https://docs.google.com/document/d/1AS3GIR84IMyoNUbN8eiSnuM3o6o9fscvlKvjhJSxokc/edit)
 
 **DTRs**
 
 * [First DTR 7/29/24](https://docs.google.com/document/d/1HEdpmbyhJbeJtJJ8pkOvZ5zeb07FeqkCZlBai6aSP0s/edit)
+
+* Discussed second DTR 8/02/24
 
 ## Project Retro
 
@@ -58,7 +79,7 @@
 
 * **Delaney, Kyle**
     * [Github](https://github.com/kylomite)
-    * [LinkedIn](https://www.linkedin.com/in/kyle-delaney-115164172/edit/forms/next-action/after-connect-add-position/)
+    * [LinkedIn](https://www.linkedin.com/in/kyle-delaney-115164172)
 
 * **Hill, John**
     * [Github](https://github.com/jphill19)
