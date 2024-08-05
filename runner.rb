@@ -13,4 +13,3 @@ season_data = {
 
 stat_tracker = StatTracker.from_csv(season_data)
 
-stat_tracker.most_accurate_team(20122013)
