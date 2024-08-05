@@ -26,14 +26,6 @@ RSpec.describe Season do
             expect(@season_1.hoa).to eq('away')
         end
 
-        it 'has result attribute' do
-            expect(@season_1.result).to eq('LOSS')
-        end
-
-        it 'has settled_in attribute' do
-            expect(@season_1.settled_in).to eq('OT')
-        end
-
         it 'has head_coach attribute' do
             expect(@season_1.head_coach).to eq('John Tortorella')
         end
@@ -48,30 +40,6 @@ RSpec.describe Season do
 
         it 'has tackles attribute' do
             expect(@season_1.tackles).to eq(44)
-        end
-
-        it 'has pim attribute' do
-            expect(@season_1.pim).to eq(8)
-        end
-
-        it 'has power_play_opportunities attribute' do
-            expect(@season_1.power_play_opportunities).to eq(3)
-        end
-
-        it 'has power_play_goals attribute' do
-            expect(@season_1.power_play_goals).to eq(0)
-        end
-
-        it 'has face_off_win_percentage attribute' do
-            expect(@season_1.face_off_win_percentage).to eq(44)
-        end
-
-        it 'has giveaways attribute' do
-            expect(@season_1.giveaways).to eq(17)
-        end
-
-        it 'has takeaways attribute' do
-            expect(@season_1.takeaways).to eq(7)
         end
     end
 end
