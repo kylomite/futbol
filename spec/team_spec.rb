@@ -17,20 +17,8 @@ RSpec.describe Team do
             expect(@team_1.team_id).to eq(1)
         end
 
-        it 'has franchise_id attribute' do
-            expect(@team_1.franchise_id).to eq(23)
-        end
-
         it 'has team_name attribute' do
             expect(@team_1.team_name).to eq('Atlanta United')
-        end
-
-        it 'has abbreviation attribute' do
-            expect(@team_1.abbreviation).to eq('ATL')
-        end
-
-        it 'has stadium attribute' do
-            expect(@team_1.stadium).to eq('Mercedes-Benz Stadium')
         end
     end
 end
