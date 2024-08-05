@@ -254,10 +254,6 @@ class StatTracker
         end
     end
   
-    # def most_accurate_team
-  
-    # end  
-
     def all_games_ids_in_specified_season(specific_season)
         
         games_in_seasons = @game_stats_data.find_all { |game_id, game_object| game_object.season == specific_season.to_i}
