@@ -344,6 +344,19 @@ RSpec.describe StatTracker do
        
             expect(@stat_tracker.win_loss_ratio("20122014")).to eq(expected)
         end
+        it "can factor in tied games as well" do
+            hash_of_games = @stat_tracker.instance_variable_get(:@game_stats_data)
+
+            hash_of_games[2012030221].instance_variable_set(:@season, 20122014)
+            hash_of_games[2012030223].instance_variable_set(:@season, 20122014)
+
+            hash_of_games[2012030221].instance_variable_set(:@away_goals, 3)
+
+            expected = {"John Tortorella"=>{:win_count=>0, :games_played=>2, :tied_games=>1}, 
+                        "Claude Julien"=>{:win_count=>1, :games_played=>2, :tied_games=>1}}
+
+            expect(@stat_tracker.win_loss_ratio("20122014")).to eq(expected)
+        end
     end
 
     describe 'id to coach' do
